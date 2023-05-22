@@ -2,16 +2,18 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // declaring variables for the price, sales tax, and total
+        double purchasePrice = 20.00; // defined the total purchase as $19.50
+        double salesTax = 5; // 5% sales tax constant
+        double totalPrice = 0;
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        // calculate the total after sales tax
+        totalPrice = purchasePrice + (purchasePrice * (salesTax / 100));
+
+        // output the purchase price, sales tax, and total price
+        System.out.println("The original purchase price (in USD) is: " + purchasePrice);
+        System.out.println("The sales tax is: " + salesTax + "%");
+        System.out.println("The total price (in USD) is: " + totalPrice);
     }
 }
